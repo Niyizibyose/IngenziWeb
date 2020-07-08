@@ -282,29 +282,27 @@ The developer of this website is github.com/Niyizibyose -->
 			</footer>
 		</div>
 	
-			<div class="form-popup" id="myForm">
+			<div class="form-popup" id="loginForm">
 				<form action="/action_page.php" class="form-container">
 				  <h1>Login</h1>
 			  
-				  <label for="email"><b>Email</b></label>
-				  <input type="text" placeholder="Enter Email" name="email" required>
-			  
-				  <label for="psw"><b>Password</b></label>
-				  <input type="password" placeholder="Enter Password" name="psw" required>
+				
+				  <input type="tel" placeholder="Phone" name="phoneLogin" required>
+				  <input type="password" placeholder="Password" name="passwordLogin" required>
 			  
 				  <button type="submit" class="btn">Login</button>
 				  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 				</form>
 			  </div>
 
-			  
+
 			  <script>
 				function openForm() {
-				  document.getElementById("myForm").style.display = "block";
+				  document.getElementById("loginForm").style.display = "block";
 				}
 				
 				function closeForm() {
-				  document.getElementById("myForm").style.display = "none";
+				  document.getElementById("loginForm").style.display = "none";
 				}
 				</script>
 		<script src="https://www.youtube.com/iframe_api"></script>
