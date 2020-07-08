@@ -54,8 +54,6 @@ The developer of this website is github.com/Niyizibyose -->
 							<img class="logo logo-dark" alt="Logo" src="img/ingenzi2.png">
 						</div>
 					</div>
-				
-				
 					<div class="row nav-menu">
 					
 						<div class="col-sm-12 columns text-center">
@@ -77,33 +75,7 @@ The developer of this website is github.com/Niyizibyose -->
 				</div>
 				<div class="bottom-border"></div>
 			</nav>
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-						
-			
-		
-			
-		
-		</div>
+			</div>
 		
 		<div class="main-container">
 			<header class="product-action">
@@ -115,7 +87,7 @@ The developer of this website is github.com/Niyizibyose -->
 							<p class="text-white">
 								With Ingenzi you no longer need to make long quees at entry points, open Ingenzi and make a one click to scan a QR Code there and you are ready to go!
 							</p>
-							<a href="#" class="btn btn-primary btn-white">Sign Up</a>
+							<a href="#" class="btn btn-primary btn-white open-button" onclick="openForm()">Sign Up</a>
 							<a href="#" class="btn btn-primary btn-filled">Sign In</a>
 						</div>
 						<div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
@@ -152,9 +124,7 @@ The developer of this website is github.com/Niyizibyose -->
 							<div class="feature feature-icon-large">
 								<i class="icon icon-happy"></i>
 								<h5>Realtime responsiveness</h5>
-								<p>
-								
-Our app is always live. Don't expect any  malfunction from us.								</p>
+								<p>Our app is always live. Don't expect any  malfunction from us.</p>
 							</div>
 						</div>
 					
@@ -254,9 +224,6 @@ Our app is always live. Don't expect any  malfunction from us.								</p>
 
 	<br>connect@augmented-future.com</p>
 					</div>
-					
-					
-					
 					<div class="col-sm-6">
 						<h5>Message form</h5>
 						<div class="form-wrapper clearfix">
@@ -281,11 +248,7 @@ Our app is always live. Don't expect any  malfunction from us.								</p>
 		</section>
 	</div>
 	</div>
-		
-		<div class="footer-container">
-					
-			
-					
+		<div class="footer-container">		
 			<footer class="social bg-secondary-1">
 			
 				<div class="container">
@@ -318,7 +281,32 @@ Our app is always live. Don't expect any  malfunction from us.								</p>
 			
 			</footer>
 		</div>
+	
+			<div class="form-popup" id="myForm">
+				<form action="/action_page.php" class="form-container">
+				  <h1>Login</h1>
+			  
+				  <label for="email"><b>Email</b></label>
+				  <input type="text" placeholder="Enter Email" name="email" required>
+			  
+				  <label for="psw"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="psw" required>
+			  
+				  <button type="submit" class="btn">Login</button>
+				  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				</form>
+			  </div>
+
+			  
+			  <script>
+				function openForm() {
+				  document.getElementById("myForm").style.display = "block";
+				}
 				
+				function closeForm() {
+				  document.getElementById("myForm").style.display = "none";
+				}
+				</script>
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="js/jquery.min.js"></script>
         <script src="js/jquery.plugin.min.js"></script>
