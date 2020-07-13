@@ -88,7 +88,7 @@ The developer of this website is github.com/Niyizibyose -->
 								With Ingenzi you no longer need to make long quees at entry points, open Ingenzi and make a one click to scan a QR Code there and you are ready to go!
 							</p>
 							<a href="#" class="btn btn-primary btn-white open-button" onclick="openForm()">Sign Up</a>
-							<a href="#" class="btn btn-primary btn-filled">Sign In</a>
+							<a href="#" class="btn btn-primary btn-filled" onclick = "openRegister()">Sign In</a>
 						</div>
 						<div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
 							<img alt="Screenshot" src="img/screen1.png" class="screen1">
@@ -293,14 +293,33 @@ The developer of this website is github.com/Niyizibyose -->
 				</form>
 			  </div>
 
+			  <div class="form-popup" id="registerForm">
+				<form action="/authActions.php" class="form-container">
+				  <h1> Register</h1>
+				  <input type="tel" placeholder="Phone" name="phoneRegister" required>
+				  <input type="password" placeholder="Password" name="passwordRegister" required>
+			  
+				  <button type="submit" class="btn">Register</button>
+				  <button type="button" class="btn cancel" onclick="closeRegister()">Close</button>
+				</form>
+			  </div>
+
 
 			  <script>
 				function openForm() {
 				  document.getElementById("loginForm").style.display = "block";
 				}
+
+				function openRegister() {
+				  document.getElementById("registerForm").style.display = "block";
+				}
 				
 				function closeForm() {
 				  document.getElementById("loginForm").style.display = "none";
+				}
+
+				function closeRegister() {
+				  document.getElementById("registerForm").style.display = "none";
 				}
 				</script>
 		<script src="https://www.youtube.com/iframe_api"></script>
